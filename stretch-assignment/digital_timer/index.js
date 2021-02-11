@@ -42,6 +42,10 @@ const secondOneCounter = setInterval(function() {
         secondOneCount +=1 ;
     }
 } , 1000)
+ 
+    
+  
+
 
 let msHunCount = 0
 const msHunCounter = setInterval(function() {
@@ -74,3 +78,11 @@ const msTenCounter = setInterval(function() {
             clearInterval(msTenCounter);
         }
 }, 10)
+
+const interval = document.querySelector('.digits')
+// console.log(interval);
+
+const intervalCounter = document.createElement('h1')
+intervalCounter.textContent = '0'
+
+interval.appendChild(intervalCounter)
